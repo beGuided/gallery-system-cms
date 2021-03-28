@@ -20,13 +20,13 @@
 //            $user = new User();
 //            $user->username= "Example_username";
 //            $user->password= "Example_password";
-//            $user->first_name= "joshua";
+//            $user->first_name= "samuel";
 //            $user->last_name= "adejoh";
 //            $user->create();
 
-            $user= User::find_user_by_id(3);
-           // $user->username = "william";
-            $user->delete();
+            $user= User::find_user_by_id(6);
+           $user->last_name = "gerals";
+            $user->save();
 
             ?>
 
