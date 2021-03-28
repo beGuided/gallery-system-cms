@@ -13,8 +13,10 @@
             <?php
 
 
-//            $found_user= User::find_user_by_id(2);
-//            echo $found_user->last_name;
+//            $Photo= Photo::find_all();
+//            foreach ($Photo as $picture){
+//            echo $picture->filename;
+//            }
 
 
 //            $user = new User();
@@ -24,9 +26,12 @@
 //            $user->last_name= "adejoh";
 //            $user->create();
 
-            $user= User::find_user_by_id(6);
-           $user->last_name = "gerals";
-            $user->save();
+            $photo= new Photo();
+            $photo->filename= "Example_picture";
+            $photo->type= "image";
+            $photo->size= "favour";
+            $photo->title= "weeding photos ";
+            $photo->save();
 
             ?>
 
