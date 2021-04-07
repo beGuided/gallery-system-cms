@@ -13,25 +13,24 @@
             <?php
 
 
-//            $Photo= Photo::find_all();
-//            foreach ($Photo as $picture){
-//            echo $picture->filename;
-//            }
+//            $User= Photo::find_by_id(1);
+//            //foreach ($User as $user){
+//            echo $User->filename;
 
 
-//            $user = new User();
+
+//            $user =  User::find_by_id(6);
 //            $user->username= "Example_username";
 //            $user->password= "Example_password";
-//            $user->first_name= "samuel";
-//            $user->last_name= "adejoh";
-//            $user->create();
+//            $user->save();
 
-            $photo= new Photo();
-            $photo->filename= "Example_picture";
-            $photo->type= "image";
-            $photo->size= "favour";
-            $photo->title= "weeding photos ";
-            $photo->save();
+//            $user= new Photo();
+//            $user->filename= "Example_picture";
+//            $user->type= "image";
+//            $user->size= "favour";
+//            $user->title= "weeding user ";
+//            $user->save();
+            //echo INCLUDES_PATH;
 
             ?>
 
