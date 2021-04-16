@@ -22,7 +22,7 @@ if(empty($_GET['id'])) {
                $user->save();
            }else {
                $user->set_file($_FILES['user_image']);
-               $user->save_user_and_image();
+               $user->upload_photo();
                $user->save();
                redirect("edit_user.php?id={$user->id}");
            }
@@ -88,11 +88,11 @@ if(empty($_GET['id'])) {
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" name="update" class="btn-primary pull-right">
+                            <input type="submit" name="update" value="update" class="btn btn-primary pull-right">
                         </div>
-<!--                        <div class="form-group">-->
-<!--                            <a href="delete_user.php?id=--><?php //echo $_GET['id']; ?><!--" ><input type="submit" value="delete" class="btn-danger pull-left"></a>-->
-<!--                        </div>-->
+                        <div class="form-group">
+                            <a href="delete_user.php?id=<?php echo $user->id; ?>" class="btn btn-danger" >Delete</a>
+                        </div>
 
 
                     </div>
